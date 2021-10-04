@@ -1,0 +1,5 @@
+http://gogle.net/
+<Response [302]>
+http://ww1.youtuba.com
+<Response [302]>
+http://ww1.discordap.com/?terms=Live%20Chat%20Software,Online%20Chat%20Room%20Games%20For%20Free,Online%20Registration%20Software
