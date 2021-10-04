@@ -1,4 +1,3 @@
-import os
 import requests
 from urllib.parse import urlparse
 
@@ -16,7 +15,7 @@ for domain in typodomains:
       alivedomains.append(domain)
       enddomains.append(urlparse(req.url).netloc)
       for reddomain in req.history:
-        redirecturls.append(reddomain)
+        redirecturls.append(reddomain.url)
       redirecturls.append(req.url)
   except Exception as err:
     print("Domain {} is dead".format(domain))
