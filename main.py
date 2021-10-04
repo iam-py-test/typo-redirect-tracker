@@ -18,8 +18,9 @@ for domain in typodomains:
       for reddomain in req.history:
         redirecturls.append(reddomain)
       redirecturls.append(req.url)
-  except:
+  except Exception as err:
     print("Domain {} is dead".format(domain))
+    print(err,domain)
 
 redirecturlsout = open("redirecturls.txt","w")
 enddomainsout = open("enddomains.txt","w")
