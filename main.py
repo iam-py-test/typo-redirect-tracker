@@ -1,8 +1,8 @@
 import requests
 from urllib.parse import urlparse
 
-typodomains = ["gogle.net","youtuba.com","discordap.com","discordapp.cam"]
-safeends = ["google.com","youtube.com","discordapp.com","discord.com","duckduckgo.com","www.godaddy.com"]
+typodomains = ["gogle.net","youtuba.com","discordap.com","discordapp.cam","yotube.com","yutube.com","googheusercontent.com","googlatagmanager.com","wyoutube.com","gmsail.com","gmailgmail.com","gmailc.om"]
+safeends = ["google.com","youtube.com","discordapp.com","discord.com","duckduckgo.com","www.godaddy.com","googleusercontent.com","gmail.com"]
 
 redirecturls = []
 enddomains = []
