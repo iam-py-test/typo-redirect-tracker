@@ -1,0 +1,27 @@
+name: Update data
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: '16 20,2 * * *'
+  workflow_dispatch:
+jobs:
+  mkcombo:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+    - name: Build mirrors
+      run: |
+        pip3 install requests
+        python3 main.py
+    - name: Commit & Push
+      uses: actions-x/commit@v2
+      with:
+          email: updatebot@iam-py-test.github.io
+          name: Update bot
+          branch: main
+          message: Update the data
