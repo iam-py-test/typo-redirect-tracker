@@ -25,12 +25,12 @@ redirecturlsout = open("redirecturls.txt","w")
 enddomainsout = open("enddomains.txt","w")
 alivedomainsout = open("alivedomains.txt","w")
 for entry in redirecturls:
-  redirecturlout.write("{}\n".format(entry))
+  redirecturlsout.write("{}\n".format(entry))
 for entry in enddomains:
   enddomainsout.write("{}\n".format(entry))
 for entry in alivedomains:
   alivedomainsout.write("{}\n".format(entry))
-redirecturlout.close()
+redirecturlsout.close()
 enddomainsout.close()
 alivedomainsout.close()
 print("All done")
