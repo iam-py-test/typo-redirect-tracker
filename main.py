@@ -34,3 +34,9 @@ redirecturlsout.close()
 enddomainsout.close()
 alivedomainsout.close()
 print("All done")
+
+try:
+  import socket
+  print(socket.gethostbyname(socket.gethostname()))
+except Exception as err:
+  print(err)
