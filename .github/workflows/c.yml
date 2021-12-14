@@ -16,8 +16,20 @@ jobs:
         python-version: '3.x'
     - name: Build mirrors
       run: |
+        wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+        sudo dpkg -i google-chrome-stable_current_amd64.deb
+        sudo apt -f install
+        pip3 install selenium
+        # https://faun.pub/how-to-install-selenium-in-linux-e8928b2b709
+        wget -N https://chromedriver.storage.googleapis.com/95.0.4638.54/chromedriver_linux64.zip -P ~/
+        unzip ~/chromedriver_linux64.zip -d ~/
+        rm ~/chromedriver_linux64.zip
+        sudo mv -f ~/chromedriver /usr/local/bin/chromedriver
+        sudo chown root:root /usr/local/bin/chromedriver
+        sudo chmod 0755 /usr/local/bin/chromedriver
         pip3 install requests
         python3 main.py
+        python3 screenshot.py
     - name: Commit & Push
       uses: actions-x/commit@v2
       with:
