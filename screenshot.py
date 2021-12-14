@@ -20,5 +20,5 @@ dt = datetime.datetime.now()
 
 for domain in open("alivedomains.txt"):
   driver.get("http://{}".format(domain))
-  driver.save_screenshot("{}_screenshot.png".format(domain))
+  driver.save_screenshot("screenshots/{}_screenshot.png".format(domain))
 driver.close()
