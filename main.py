@@ -1,8 +1,8 @@
 import requests
 from urllib.parse import urlparse
 
-typodomains = ["gogle.net","youtuba.com","discordap.com","yotube.com","yutube.com","googheusercontent.com","wyoutube.com","gmsail.com","gmailgmail.com","gmailc.om","googlesite.ws","gooooooooogle.com","pay-pal.club","githu.com","fecebook.com","youutube.com","casebook.com","dacebook.com","gacebook.com"]
-safeends = ["google.com","youtube.com","discordapp.com","discord.com","duckduckgo.com","www.godaddy.com","googleusercontent.com","googleanalytics.com","googletagmanager.com","gmail.com","malwarebytes.com","gstatic.com","jquery.com","malwarebytes.org","paypal.com","github.com","microsoft.com","raw.githubusercontent.com","githubusercontent.com","facebook.com","www.facebook.com"]
+typodomains = ["gogle.net","youtuba.com","discordap.com","yotube.com","yutube.com","googheusercontent.com","wyoutube.com","gmsail.com","gmailgmail.com","gmailc.om","googlesite.ws","gooooooooogle.com","pay-pal.club","githu.com","fecebook.com","youutube.com","casebook.com","dacebook.com","gacebook.com","forums.malwarebytes.co","bleepingxomputer.com","bleepingvomputer.com"]
+safeends = ["google.com","youtube.com","discordapp.com","discord.com","duckduckgo.com","www.godaddy.com","googleusercontent.com","googleanalytics.com","googletagmanager.com","gmail.com","malwarebytes.com","gstatic.com","jquery.com","malwarebytes.org","paypal.com","github.com","microsoft.com","raw.githubusercontent.com","githubusercontent.com","facebook.com","www.facebook.com","forums.malwarebytes.com","bleepingcomputer.com"]
 
 redirecturls = []
 enddomains = []
